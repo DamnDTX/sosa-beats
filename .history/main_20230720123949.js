@@ -1,0 +1,2 @@
+querySelector('.tecla_pom')
+
