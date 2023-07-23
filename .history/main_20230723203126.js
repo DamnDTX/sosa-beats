@@ -13,18 +13,16 @@ let contador = 0;
 while (contador < listadeteclas.length) {
 
    const instrumento = listadeteclas[contador].classList[1];
-   const tecla = listadeteclas[contador];
 
-   const idAudio = `#som_${instrumento}`;
-        //console.log(idAudio);
+    console.log(instrumento)
 
-    tecla.onclick = function () {
-        somplay(idAudio);
+    listadeteclas[contador].onclick = function () {
+        somplay('#som_tecla_pom');
     };
 
 contador = contador + 1;
 
-//console.log(contador);
+console.log(contador);
 
 }
 
