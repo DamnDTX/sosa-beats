@@ -15,23 +15,17 @@ for (let contador = 0; contador < listadeteclas.length;contador++){
 
    const instrumento = listadeteclas[contador].classList[1];
    const tecla = listadeteclas[contador];
-   const idAudio = `#som_${instrumento}`;  
-         //template.string;
+   const idAudio = `#som_${instrumento}`;        //template.string;
 
     tecla.onclick = function () {
         somplay(idAudio);
     }
     
 
-    tecla.onkeydown = function(evento) {
-
-
-       if (evento.code === 'Space' || evento.code === 'Enter') { 
+    tecla.onkeydown = function () {
         tecla.classList.add('ativa');
-       }
-    }
 
-    
+    }
 
     tecla.onkeyup = function () {
         tecla.classList.remove('ativa');

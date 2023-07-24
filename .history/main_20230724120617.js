@@ -22,16 +22,11 @@ for (let contador = 0; contador < listadeteclas.length;contador++){
         somplay(idAudio);
     }
     
-
-    tecla.onkeydown = function(evento) {
-
-
-       if (evento.code === 'Space' || evento.code === 'Enter') { 
+if () { 
+    tecla.onkeydown = function () {
         tecla.classList.add('ativa');
-       }
     }
-
-    
+    }
 
     tecla.onkeyup = function () {
         tecla.classList.remove('ativa');
